@@ -14,7 +14,7 @@ async def favicon():
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"msg": "Hello World"}
 
 
 if __name__ == "__main__":
