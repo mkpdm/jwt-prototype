@@ -1,5 +1,5 @@
 {
-  "app": "pipenv run python app.py",
+  "app": "pipenv run python cdk.py",
   "watch": {
     "include": [
       "**"
