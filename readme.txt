@@ -14,3 +14,12 @@ python --version
 pip install pipenv --user
 fish_add_path ~/.local/bin
 sudo npm install -g aws-cdk
+
+install aws cliv2 - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+aws configure
+aws sts get-caller-identity
+cdk bootstrap aws://{ACCOUNT_ID}/{REGION}
+
+cdk ls
+cdk synth
+cdk deploy

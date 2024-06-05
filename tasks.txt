@@ -1,0 +1,16 @@
+
+cdk:
+    get the user pool set up
+    get the user pool client set up
+    get a user added to the user pool
+
+api:
+    grab fastapi boilerplate
+    add a /token or /auth endpoint that given credentials, returns a token for the user. (look into plaintext password vs password hash)
+    token acquire
+    token refresh
+    token validation
+    logging on failed login attempts
+    jwt for signed payloads
+    jwe for encrypted payloads
+    unsecure payloads
