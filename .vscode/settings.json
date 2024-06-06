@@ -8,8 +8,10 @@
 	"[javascript, typescript, javascriptreact, typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome",
 	},
-	"[json]": {
-		"editor.defaultFormatter": "biomejs.biome",
-	},
-	"biome.lspBin": "./client/node_modules/@biomejs/biome/bin/biome"
+	"biome.lspBin": "./client/node_modules/@biomejs/biome/bin/biome",
+	"python.testing.pytestArgs": [
+		"backend"
+	],
+	"python.testing.unittestEnabled": false,
+	"python.testing.pytestEnabled": true
 }
