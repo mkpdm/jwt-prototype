@@ -2,7 +2,8 @@
 cdk:
     get the user pool set up
     get the user pool client set up
-    get a user added to the user pool
+    get a user added to the user pool (set up quick script for destroy/deploy runs while debugging, sustain after the model is finalized.)
+    get cdk stack synth to populate user pool info into .env (spike)
 
 api:
     grab fastapi boilerplate
@@ -14,3 +15,13 @@ api:
     jwt for signed payloads
     jwe for encrypted payloads
     unsecure payloads
+
+client:
+    choose a neat lightweight relevant framework
+    simple login screen, without using amplify.
+    generic error page that populates/displays on 40x/50x (40, 401, 403, 404 etc)
+    toast providers
+    toasts for "passive" errors (400, 405, 503) & input validation errors
+    SSR (spike)
+    jwe payloads for sensitive user info
+    jwt payloads for non-sensitive user-specific hydration
