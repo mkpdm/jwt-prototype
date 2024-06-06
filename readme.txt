@@ -23,3 +23,6 @@ cdk bootstrap aws://{ACCOUNT_ID}/{REGION}
 cdk ls
 cdk synth
 cdk deploy
+
+git update-index --skip-worktree ./backend/api/mkapi/.env
+git update-index --skip-worktree ./backend/api/mkapi/.env.dev
