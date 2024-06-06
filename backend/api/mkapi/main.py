@@ -3,6 +3,8 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 
+from mkapi.routers import auth
+
 app = FastAPI()
 """Design Fundamentals:
 
@@ -14,6 +16,9 @@ app = FastAPI()
     - https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf#page=11
 """
 
+# Include the item and user routers
+app.include_router(auth.router, tags=["auth"])
+
 
 @app.get("/favicon.ico", include_in_schema=False)
 async def favicon():
@@ -22,11 +27,10 @@ async def favicon():
 
 
 @app.get("/")
-def read_root():
+def get_root():
     return {"msg": "Hello World"}
 
 
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+@app.get("/info")
+def get_info():
+    return {"msg": "Info endpoint"}

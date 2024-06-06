@@ -6,9 +6,13 @@ name = "pypi"
 [packages]
 aws-cdk-lib = "*"
 constructs = "*"
+python-dotenv = "*"
+httpx = "*"
+pyjwt = {extras = ["crypto"], version = "*"}
 
 [dev-packages]
 pytest = "*"
+setuptools = "*"
 
 [requires]
 python_version = "3.12"
