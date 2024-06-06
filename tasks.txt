@@ -22,6 +22,6 @@ client:
     generic error page that populates/displays on 40x/50x (40, 401, 403, 404 etc)
     toast providers
     toasts for "passive" errors (400, 405, 503) & input validation errors
-    SSR (spike)
+    SSR & SSR overwrite hook for sidebar/nav (spike)
     jwe payloads for sensitive user info
     jwt payloads for non-sensitive user-specific hydration
